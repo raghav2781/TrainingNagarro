@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">18</td><td class="numi">18</td><td class="numi">0</td><td class="numi_attn">12</td><td class="numi">32.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">demo.redbus.assignment.TestCasesForHomePage</td><td><a href="#m1"><b>helpWindowTest</b>  </a></td><td class="numi">1</td><td>1558088321716</td><td class="numi">83</td></tr><tr class="failedodd"><td><a href="#m2"><b>isSignButtonOnHomePageEnabledTest</b>  </a></td><td class="numi">1</td><td>1558088341601</td><td class="numi">82</td></tr>
+<tr class="failedeven"><td rowspan="1">demo.redbus.assignment.TestCasesForKnowMorePage</td><td><a href="#m3"><b>redirectAppStoreFromKnowMoreWindowTest</b>  </a></td><td class="numi">1</td><td>1558088314489</td><td class="numi">4644</td></tr>
+<tr class="failedodd"><td rowspan="4">demo.redbus.assignment.TestCasesForHomePage</td><td><a href="#m4"><b>redirectHomePagefromBusHireWindowTest</b>  </a></td><td class="numi">1</td><td>1558088322006</td><td class="numi">64</td></tr><tr class="failedodd"><td><a href="#m5"><b>redirectHomePagefromBusTicketWindowTest</b>  </a></td><td class="numi">1</td><td>1558088321880</td><td class="numi">63</td></tr><tr class="failedodd"><td><a href="#m6"><b>redirectHomePagefromHotelsWindowTest</b>  </a></td><td class="numi">1</td><td>1558088321945</td><td class="numi">59</td></tr><tr class="failedodd"><td><a href="#m7"><b>redirectHomePagefromPilgrimagesWindowTest</b>  </a></td><td class="numi">1</td><td>1558088322072</td><td class="numi">55</td></tr>
+<tr class="failedeven"><td rowspan="2">demo.redbus.assignment.TestCasesForKnowMorePage</td><td><a href="#m8"><b>redirectPlayStoreFromKnowMoreWindowTest</b>  </a></td><td class="numi">1</td><td>1558088319145</td><td class="numi">2210</td></tr><tr class="failedeven"><td><a href="#m9"><b>redirectWindowStoreFromKnowMoreWindow</b>  </a></td><td class="numi">1</td><td>1558088321358</td><td class="numi">95</td></tr>
+<tr class="failedodd"><td rowspan="1">demo.redbus.assignment.TestCasesforHotelsPage</td><td><a href="#m10"><b>roomSearchTest</b>  </a></td><td class="numi">1</td><td>1558088326382</td><td class="numi">2070</td></tr>
+<tr class="failedeven"><td rowspan="1">demo.redbus.assignment.TestCasesForHomePage</td><td><a href="#m11"><b>searchTest</b>  </a></td><td class="numi">1</td><td>1558088321802</td><td class="numi">74</td></tr>
+<tr class="failedodd"><td rowspan="1">demo.redbus.assignment.TestCasesForBusTicketPage</td><td><a href="#m12"><b>titleVerificationOfBusTicketPage</b>  </a></td><td class="numi">1</td><td>1558088322130</td><td class="numi">65</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">demo.redbus.assignment.TestCasesforHotelsPage</td><td><a href="#m13"><b>areAllBangloreAreasEnabledOnHotelsPageTest</b>  </a></td><td class="numi">1</td><td>1558088323756</td><td class="numi">1673</td></tr><tr class="passedodd"><td><a href="#m14"><b>areAllChennaiAreasEnabledOnHotelsPageTest</b>  </a></td><td class="numi">1</td><td>1558088325957</td><td class="numi">116</td></tr><tr class="passedodd"><td><a href="#m15"><b>areAllHydrabadAreasEnabledOnHotelsPageTest</b>  </a></td><td class="numi">1</td><td>1558088325519</td><td class="numi">437</td></tr><tr class="passedodd"><td><a href="#m16"><b>areAllMumbaiAreasEnabledOnHotelsPageTest</b>  </a></td><td class="numi">1</td><td>1558088326173</td><td class="numi">100</td></tr><tr class="passedodd"><td><a href="#m17"><b>areAllPuneAreasEnabledOnHotelsPageTest</b>  </a></td><td class="numi">1</td><td>1558088326075</td><td class="numi">97</td></tr><tr class="passedodd"><td><a href="#m18"><b>areAllTopHotelsInIndiaEnabledOnHotelsPageTest</b>  </a></td><td class="numi">1</td><td>1558088326274</td><td class="numi">106</td></tr>
+<tr class="passedeven"><td rowspan="4">demo.redbus.assignment.TestCasesForBusTicketPage</td><td><a href="#m19"><b>areAllVisibleBusOperatorsEnabledOnBusTicketPageTest</b>  </a></td><td class="numi">1</td><td>1558088322323</td><td class="numi">143</td></tr><tr class="passedeven"><td><a href="#m20"><b>areAllVisibleCitiesEnabledOnBusTicketPageTest</b>  </a></td><td class="numi">1</td><td>1558088322468</td><td class="numi">117</td></tr><tr class="passedeven"><td><a href="#m21"><b>areAllVisibleRTCBusOperatorsEnabledOnBusTicketPageTest</b>  </a></td><td class="numi">1</td><td>1558088322586</td><td class="numi">1169</td></tr><tr class="passedeven"><td><a href="#m22"><b>areTopRoutesElementsEnabledOnBusTicketPageTest</b>  </a></td><td class="numi">1</td><td>1558088322198</td><td class="numi">123</td></tr>
+<tr class="passedodd"><td rowspan="3">demo.redbus.assignment.TestCasesForHomePage</td><td><a href="#m23"><b>awardsAndRecognitionOnHomePageClickableTest</b>  </a></td><td class="numi">1</td><td>1558088341774</td><td class="numi">93</td></tr><tr class="passedodd"><td><a href="#m24"><b>isFacebookPageRedirectingFromHomePageTest</b>  </a></td><td class="numi">1</td><td>1558088328457</td><td class="numi">6591</td></tr><tr class="passedodd"><td><a href="#m25"><b>isTwitterPageRedirectingFromHomePageTest</b>  </a></td><td class="numi">1</td><td>1558088335050</td><td class="numi">6550</td></tr>
+<tr class="passedeven"><td rowspan="1">demo.redbus.assignment.TestCasesForKnowMorePage</td><td><a href="#m26"><b>knowMoreWindowTest</b>  </a></td><td class="numi">1</td><td>1558088309376</td><td class="numi">5112</td></tr>
+<tr class="passedodd"><td rowspan="3">demo.redbus.assignment.TestCasesForHomePage</td><td><a href="#m27"><b>ourGlobalPresenceOnHomePageClickableTest</b>  </a></td><td class="numi">1</td><td>1558088341686</td><td class="numi">86</td></tr><tr class="passedodd"><td><a href="#m28"><b>productsNavigationBarTest</b>  </a></td><td class="numi">1</td><td>1558088321587</td><td class="numi">128</td></tr><tr class="passedodd"><td><a href="#m29"><b>titleVerificationOfHomePageTest</b>  </a></td><td class="numi">1</td><td>1558088321458</td><td class="numi">128</td></tr>
+<tr class="passedeven"><td rowspan="1">demo.redbus.assignment.TestCasesforHotelsPage</td><td><a href="#m30"><b>titleVerificationOfHotelsPage</b>  </a></td><td class="numi">1</td><td>1558088325431</td><td class="numi">86</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">demo.redbus.assignment.TestCasesForHomePage:isSignButtonOnHomePageEnabledTest</h2>
+<div style="padding-left:3em">
+<p>element not interactable
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;SUDEEP3150484&apos;, ip: &apos;10.175.0.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\SUDEEP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50566}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: c09ac7a3e2b44c0bfdcbf1e73342ebab</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+<br/>at demo.redbus.assignment.TestCasesForHomePage.isSignButtonOnHomePageEnabledTest(TestCasesForHomePage.java:244)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">demo.redbus.assignment.TestCasesForHomePage:redirectHomePagefromBusHireWindowTest</h2>
+<div style="padding-left:3em">
+<p>Index: 2, Size: 0</p>
+java.util.ArrayList.rangeCheck(Unknown Source)
+<br/>at java.util.ArrayList.get(Unknown Source)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+<br/>at com.sun.proxy.$Proxy9.get(Unknown Source)
+<br/>at pages.HomePage.clickOnBusHire(HomePage.java:91)
+<br/>at demo.redbus.assignment.TestCasesForHomePage.redirectHomePagefromBusHireWindowTest(TestCasesForHomePage.java:151)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">demo.redbus.assignment.TestCasesForHomePage:redirectHomePagefromPilgrimagesWindowTest</h2>
+<div style="padding-left:3em">
+<p>Index: 3, Size: 0</p>
+java.util.ArrayList.rangeCheck(Unknown Source)
+<br/>at java.util.ArrayList.get(Unknown Source)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+<br/>at com.sun.proxy.$Proxy9.get(Unknown Source)
+<br/>at pages.HomePage.clickOnPilgrimages(HomePage.java:95)
+<br/>at demo.redbus.assignment.TestCasesForHomePage.redirectHomePagefromPilgrimagesWindowTest(TestCasesForHomePage.java:171)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">demo.redbus.assignment.TestCasesForBusTicketPage:titleVerificationOfBusTicketPage</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;BUS TICKETS&apos;)]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;SUDEEP3150484&apos;, ip: &apos;10.175.0.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\SUDEEP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50566}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: c09ac7a3e2b44c0bfdcbf1e73342ebab
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;BUS TICKETS&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
+<br/>at pages.BusTicketPage.clickOnBusTicketPage(BusTicketPage.java:33)
+<br/>at demo.redbus.assignment.TestCasesForBusTicketPage.titleVerificationOfBusTicketPage(TestCasesForBusTicketPage.java:139)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">demo.redbus.assignment.TestCasesForHomePage:helpWindowTest</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Help&apos;)]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;SUDEEP3150484&apos;, ip: &apos;10.175.0.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\SUDEEP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50566}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: c09ac7a3e2b44c0bfdcbf1e73342ebab
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Help&apos;)]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
+<br/>at pages.HomePage.clickOnHelpButton(HomePage.java:102)
+<br/>at demo.redbus.assignment.TestCasesForHomePage.helpWindowTest(TestCasesForHomePage.java:77)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">demo.redbus.assignment.TestCasesForHomePage:searchTest</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;src&apos;]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;SUDEEP3150484&apos;, ip: &apos;10.175.0.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\SUDEEP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50566}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: c09ac7a3e2b44c0bfdcbf1e73342ebab
+*** Element info: {Using=xpath, value=//input[@id=&apos;src&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+<br/>at pages.HomePage.sourceDestinationOnwarddateReturndate(HomePage.java:70)
+<br/>at demo.redbus.assignment.TestCasesForHomePage.searchTest(TestCasesForHomePage.java:26)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">demo.redbus.assignment.TestCasesForHomePage:redirectHomePagefromBusTicketWindowTest</h2>
+<div style="padding-left:3em">
+<p>Index: 0, Size: 0</p>
+java.util.ArrayList.rangeCheck(Unknown Source)
+<br/>at java.util.ArrayList.get(Unknown Source)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+<br/>at com.sun.proxy.$Proxy9.get(Unknown Source)
+<br/>at pages.HomePage.clickOnBusTicket(HomePage.java:83)
+<br/>at demo.redbus.assignment.TestCasesForHomePage.redirectHomePagefromBusTicketWindowTest(TestCasesForHomePage.java:108)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">demo.redbus.assignment.TestCasesForKnowMorePage:redirectAppStoreFromKnowMoreWindowTest</h2>
+<div style="padding-left:3em">
+<p>unknown error: cannot determine loading status
+from no such execution context
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;SUDEEP3150484&apos;, ip: &apos;10.175.0.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\SUDEEP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50566}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: c09ac7a3e2b44c0bfdcbf1e73342ebab
+*** Element info: {Using=xpath, value=//a[@id=&apos;ac-gn-firstfocus&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:346)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:425)
+<br/>at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:307)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+<br/>at demo.redbus.assignment.TestCasesForKnowMorePage.redirectAppStoreFromKnowMoreWindowTest(TestCasesForKnowMorePage.java:57)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">demo.redbus.assignment.TestCasesForKnowMorePage:redirectPlayStoreFromKnowMoreWindowTest</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;dark_bg&apos;]//div[@class=&apos;section_content_wrapper&apos;]//div[2]//a[1]//img[1]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;SUDEEP3150484&apos;, ip: &apos;10.175.0.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\SUDEEP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50566}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: c09ac7a3e2b44c0bfdcbf1e73342ebab
+*** Element info: {Using=xpath, value=//div[@id=&apos;dark_bg&apos;]//div[@class=&apos;section_content_wrapper&apos;]//div[2]//a[1]//img[1]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
+<br/>at pages.KnowMorePage.clickOnPlayStoreButton(KnowMorePage.java:53)
+<br/>at demo.redbus.assignment.TestCasesForKnowMorePage.redirectPlayStoreFromKnowMoreWindowTest(TestCasesForKnowMorePage.java:81)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">demo.redbus.assignment.TestCasesforHotelsPage:roomSearchTest</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;search_key&apos;]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;SUDEEP3150484&apos;, ip: &apos;10.175.0.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\SUDEEP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50566}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: c09ac7a3e2b44c0bfdcbf1e73342ebab
+*** Element info: {Using=xpath, value=//input[@id=&apos;search_key&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+<br/>at pages.HotelsPage.search(HotelsPage.java:45)
+<br/>at demo.redbus.assignment.TestCasesforHotelsPage.roomSearchTest(TestCasesforHotelsPage.java:23)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">demo.redbus.assignment.TestCasesForKnowMorePage:redirectWindowStoreFromKnowMoreWindow</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;dark_bg&apos;]//div[3]//a[1]//img[1]&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;SUDEEP3150484&apos;, ip: &apos;10.175.0.87&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\SUDEEP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50566}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: c09ac7a3e2b44c0bfdcbf1e73342ebab
+*** Element info: {Using=xpath, value=//div[@id=&apos;dark_bg&apos;]//div[3]//a[1]//img[1]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy8.click(Unknown Source)
+<br/>at pages.KnowMorePage.clickOnWindowsPhoneStore(KnowMorePage.java:56)
+<br/>at demo.redbus.assignment.TestCasesForKnowMorePage.redirectWindowStoreFromKnowMoreWindow(TestCasesForKnowMorePage.java:116)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">demo.redbus.assignment.TestCasesForHomePage:redirectHomePagefromHotelsWindowTest</h2>
+<div style="padding-left:3em">
+<p>Index: 1, Size: 0</p>
+java.util.ArrayList.rangeCheck(Unknown Source)
+<br/>at java.util.ArrayList.get(Unknown Source)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)
+<br/>at com.sun.proxy.$Proxy9.get(Unknown Source)
+<br/>at pages.HomePage.clickOnHotels(HomePage.java:87)
+<br/>at demo.redbus.assignment.TestCasesForHomePage.redirectHomePagefromHotelsWindowTest(TestCasesForHomePage.java:130)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">demo.redbus.assignment.TestCasesforHotelsPage:areAllChennaiAreasEnabledOnHotelsPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">demo.redbus.assignment.TestCasesforHotelsPage:areAllTopHotelsInIndiaEnabledOnHotelsPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">demo.redbus.assignment.TestCasesforHotelsPage:titleVerificationOfHotelsPage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">demo.redbus.assignment.TestCasesForHomePage:productsNavigationBarTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">demo.redbus.assignment.TestCasesForBusTicketPage:areAllVisibleBusOperatorsEnabledOnBusTicketPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">demo.redbus.assignment.TestCasesForBusTicketPage:areTopRoutesElementsEnabledOnBusTicketPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">demo.redbus.assignment.TestCasesForHomePage:isFacebookPageRedirectingFromHomePageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">demo.redbus.assignment.TestCasesforHotelsPage:areAllMumbaiAreasEnabledOnHotelsPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">demo.redbus.assignment.TestCasesForBusTicketPage:areAllVisibleCitiesEnabledOnBusTicketPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">demo.redbus.assignment.TestCasesForHomePage:titleVerificationOfHomePageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">demo.redbus.assignment.TestCasesforHotelsPage:areAllHydrabadAreasEnabledOnHotelsPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">demo.redbus.assignment.TestCasesForKnowMorePage:knowMoreWindowTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">demo.redbus.assignment.TestCasesForHomePage:isTwitterPageRedirectingFromHomePageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">demo.redbus.assignment.TestCasesForHomePage:awardsAndRecognitionOnHomePageClickableTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">demo.redbus.assignment.TestCasesforHotelsPage:areAllBangloreAreasEnabledOnHotelsPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">demo.redbus.assignment.TestCasesForBusTicketPage:areAllVisibleRTCBusOperatorsEnabledOnBusTicketPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">demo.redbus.assignment.TestCasesforHotelsPage:areAllPuneAreasEnabledOnHotelsPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">demo.redbus.assignment.TestCasesForHomePage:ourGlobalPresenceOnHomePageClickableTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="demo.redbus.assignment.TestCasesForKnowMorePage">
+        <methods>
+          <include name="afterClass"/>
+          <include name="redirectPlayStoreFromKnowMoreWindowTest"/>
+          <include name="redirectWindowStoreFromKnowMoreWindow"/>
+          <include name="beforeClass"/>
+          <include name="redirectAppStoreFromKnowMoreWindowTest"/>
+        </methods>
+      </class> <!-- demo.redbus.assignment.TestCasesForKnowMorePage -->
+      <class name="demo.redbus.assignment.TestCasesforHotelsPage">
+        <methods>
+          <include name="roomSearchTest"/>
+        </methods>
+      </class> <!-- demo.redbus.assignment.TestCasesforHotelsPage -->
+      <class name="demo.redbus.assignment.TestCasesForHomePage">
+        <methods>
+          <include name="helpWindowTest"/>
+          <include name="redirectHomePagefromBusHireWindowTest"/>
+          <include name="redirectHomePagefromPilgrimagesWindowTest"/>
+          <include name="isSignButtonOnHomePageEnabledTest"/>
+          <include name="redirectHomePagefromBusTicketWindowTest"/>
+          <include name="redirectHomePagefromHotelsWindowTest"/>
+          <include name="searchTest"/>
+        </methods>
+      </class> <!-- demo.redbus.assignment.TestCasesForHomePage -->
+      <class name="demo.redbus.assignment.TestCasesForBusTicketPage">
+        <methods>
+          <include name="titleVerificationOfBusTicketPage"/>
+        </methods>
+      </class> <!-- demo.redbus.assignment.TestCasesForBusTicketPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="demo.redbus.assignment.TestCasesForKnowMorePage">
+        <methods>
+          <include name="afterClass"/>
+          <include name="redirectPlayStoreFromKnowMoreWindowTest"/>
+          <include name="redirectWindowStoreFromKnowMoreWindow"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- demo.redbus.assignment.TestCasesForKnowMorePage -->
+      <class name="demo.redbus.assignment.TestCasesForHomePage">
+        <methods>
+          <include name="helpWindowTest"/>
+          <include name="isTwitterPageRedirectingFromHomePageTest"/>
+          <include name="redirectHomePagefromBusHireWindowTest"/>
+          <include name="redirectHomePagefromPilgrimagesWindowTest"/>
+          <include name="isSignButtonOnHomePageEnabledTest"/>
+          <include name="isFacebookPageRedirectingFromHomePageTest"/>
+          <include name="redirectHomePagefromBusTicketWindowTest"/>
+          <include name="redirectHomePagefromHotelsWindowTest"/>
+          <include name="searchTest"/>
+        </methods>
+      </class> <!-- demo.redbus.assignment.TestCasesForHomePage -->
+      <class name="demo.redbus.assignment.TestCasesForBusTicketPage">
+        <methods>
+          <include name="titleVerificationOfBusTicketPage"/>
+        </methods>
+      </class> <!-- demo.redbus.assignment.TestCasesForBusTicketPage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
